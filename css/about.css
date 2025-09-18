@@ -1,0 +1,164 @@
+.heading {
+    color:rgba(23, 60, 60, 0.608);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+.heading:hover {
+    color: rgb(18, 18, 18);
+    text-shadow: 5px 5px 5px black;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: 50ms ease-in-out;
+}
+.subheading {
+    color: rgb(9, 9, 9);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+.subheading:hover {
+    color: rgb(18, 18, 18);
+    text-shadow: 5px 5px 5px black;
+    pointer-events: manipulate;
+    cursor: pointer;
+   animation-name: shake;
+   animation-duration: 3s;
+    transition: 50ms ease-in-out;
+}
+.header{
+    padding: 1px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+     background: linear-gradient(90deg, #ff6ec4, #7873f5);
+}
+.product-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: rgb(2, 2, 2);
+    background: linear-gradient(90deg, #0aadd5, #7e7d97);
+}
+
+.navigation {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    gap: 40px;
+}
+.navigation:hover {
+   animation-name : shake;
+   animation-duration: 3s;
+
+}   
+
+.footer {
+    background-color: rgb(103, 20, 68);
+    background: linear-gradient(180deg, #ff6ec4, #7873f5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+}
+main{
+    flex: 1;
+}
+body {
+   background: linear-gradient(45deg, #091520, #6d4c15, #500add, #c3057a);
+   background-size: 800% 800%;
+   animation: gradientShift 10s ease infinite;
+
+}
+.about {
+    background-color: rgba(195, 192, 192, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    background: linear-gradient(90deg, #f9f7f7, #c27878);
+    color: rgb(11, 11, 11);
+}
+/* Responsive design devices like tablets */
+@media (max-width: 768px) {
+  body {
+    background-color: lightblue;
+    font-size: 14px;
+  }
+  /* Breakpoint for very mobile devices */
+  
+  @media (max-width: 480px) {
+  body {
+    background: lightgreen;
+    font-size: 12px;
+  }
+}
+}
+.rajeshheading {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 30px;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-fill-mode: both; 
+    color: rgb(7, 7, 7);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
